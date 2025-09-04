@@ -21,6 +21,7 @@ public class AuthController {
     JWTUtil jwtUtil;
     @PostMapping("/authenticate")
     public ResponseEntity<String> generateToken(@RequestBody AuthRequest authRequest){
+        //Testing for Merge
         try {
         	Authentication authentication= authenticationManager.authenticate(
                     new UsernamePasswordAuthenticationToken(
