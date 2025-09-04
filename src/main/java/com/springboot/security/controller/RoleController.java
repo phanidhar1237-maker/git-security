@@ -23,6 +23,7 @@ public class RoleController {
 	@PreAuthorize("hasRole('USER')")  
 	@GetMapping("/userrole")
     public ResponseEntity<Object> userRole(@RequestParam String name) { 
+		//testing for git
     	return ResponseEntity.status(HttpStatus.OK).body(name+" UserRole Enter ");
     }
 	
