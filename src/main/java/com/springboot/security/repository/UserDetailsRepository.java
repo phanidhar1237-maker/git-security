@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.springboot.security.entity.Users;
 
 @Repository
+//in dev1 chnages 
 public interface UserDetailsRepository extends JpaRepository<Users, Long> {
 
     Optional<Users> findByUsername(String username);
